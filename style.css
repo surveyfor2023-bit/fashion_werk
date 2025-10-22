@@ -1,0 +1,1290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding: 1.5rem 0rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+body nav {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0 4rem;
+}
+body nav .logo {
+  width: 50%;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+body nav .nav-btn {
+  width: 50%;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 100;
+}
+body nav .nav-btn .create-btn {
+  text-transform: uppercase;
+  padding: 0.5rem 1.1rem;
+  border-radius: 50px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+body nav .nav-btn a {
+  text-decoration: none;
+  color: black;
+}
+body nav .menu-bar {
+  display: none;
+}
+body .title {
+  padding: 0 4rem;
+}
+body .title .title-img {
+  width: 100%;
+  height: 20%;
+}
+body .title .title-img img {
+  width: 100%;
+  height: 100%;
+}
+body .title .title-subtext {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+body .brand-potential {
+  padding: 0 4rem;
+  width: 100%;
+  margin: 3rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+body .brand-potential .brand-potential-part-1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  width: 50%;
+  padding: 2rem 1.2rem 2rem 0;
+}
+body .brand-potential .brand-potential-part-1 .brand-potential-motto {
+  font-size: 5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -0.2rem;
+}
+body .brand-potential .brand-potential-part-1 .brand-potential-motto-subtitle {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+body .brand-potential .brand-potential-part-1 .box {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(27, 26, 26, 0.266);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+}
+body .brand-potential .brand-potential-part-1 .box h3 {
+  font-weight: 400;
+}
+body .brand-potential .brand-potential-part-1 .box p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+body .brand-potential .brand-potential-part-1 .box-4 {
+  border: none;
+}
+body .brand-potential .brand-potential-part-2 {
+  width: 50%;
+  background-color: turquoise;
+}
+body .brand-potential .brand-potential-part-2 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  height: 100%;
+  align-items: stretch;
+}
+body .solutions {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  padding: 2rem 4rem 0 4rem;
+  justify-content: space-between;
+}
+body .solutions .solution-part-1 {
+  width: 30%;
+}
+body .solutions .solution-part-1 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+body .solutions .solution-part-2 {
+  width: 69%;
+  display: flex;
+  justify-content: space-between;
+}
+body .solutions .solution-part-2 .solution-gen-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.8rem 2rem;
+}
+body .solutions .solution-part-2 .solution-gen-text h2 {
+  font-size: 5.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -0.2rem;
+}
+body .solutions .solution-part-2 .solution-gen-text p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 75%;
+}
+body .solutions .solution-part-2 .solution-rotate-text p {
+  padding-top: 2rem;
+  writing-mode: vertical-rl;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 1.2rem;
+}
+body .our-services {
+  width: 100%;
+  padding: 6rem 4rem;
+  padding-bottom: 7rem;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+body .our-services .our-services-part-1 {
+  padding: 3rem 0;
+  width: 47%;
+}
+body .our-services .our-services-part-1 .services-title {
+  font-size: 5.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -0.2rem;
+  font-family: "Montserrat", sans-serif;
+  width: 70%;
+}
+body .our-services .our-services-part-1 .services-boxes {
+  width: 100%;
+  margin-top: 4rem;
+}
+body .our-services .our-services-part-1 .services-boxes .part-1-boxes,
+body .our-services .our-services-part-1 .services-boxes .part-2-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+body .our-services .our-services-part-1 .services-boxes .part-1-boxes .branding-box,
+body .our-services .our-services-part-1 .services-boxes .part-1-boxes .ecommerce-box,
+body .our-services .our-services-part-1 .services-boxes .part-2-boxes .branding-box,
+body .our-services .our-services-part-1 .services-boxes .part-2-boxes .ecommerce-box {
+  width: 45%;
+  padding: 0rem 1rem 3rem 0;
+  border-top: 2px solid rgba(128, 128, 128, 0.359);
+}
+body .our-services .our-services-part-1 .services-boxes .part-1-boxes .branding-box h3,
+body .our-services .our-services-part-1 .services-boxes .part-1-boxes .ecommerce-box h3,
+body .our-services .our-services-part-1 .services-boxes .part-2-boxes .branding-box h3,
+body .our-services .our-services-part-1 .services-boxes .part-2-boxes .ecommerce-box h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: -0.1rem;
+  font-family: "Montserrat", sans-serif;
+}
+body .our-services .our-services-part-1 .services-boxes .part-1-boxes .branding-box .logo,
+body .our-services .our-services-part-1 .services-boxes .part-1-boxes .ecommerce-box .logo,
+body .our-services .our-services-part-1 .services-boxes .part-2-boxes .branding-box .logo,
+body .our-services .our-services-part-1 .services-boxes .part-2-boxes .ecommerce-box .logo {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+  align-items: center;
+}
+body .our-services .our-services-part-1 .services-boxes .part-1-boxes .branding-box .logo .logo-name,
+body .our-services .our-services-part-1 .services-boxes .part-1-boxes .ecommerce-box .logo .logo-name,
+body .our-services .our-services-part-1 .services-boxes .part-2-boxes .branding-box .logo .logo-name,
+body .our-services .our-services-part-1 .services-boxes .part-2-boxes .ecommerce-box .logo .logo-name {
+  text-transform: uppercase;
+}
+body .our-services .our-services-part-1 .services-boxes .part-1-boxes .campaign-box,
+body .our-services .our-services-part-1 .services-boxes .part-1-boxes .social-media-box,
+body .our-services .our-services-part-1 .services-boxes .part-2-boxes .campaign-box,
+body .our-services .our-services-part-1 .services-boxes .part-2-boxes .social-media-box {
+  width: 45%;
+  padding: 0rem 1rem 3rem 0;
+  border-top: 2px solid rgba(128, 128, 128, 0.359);
+}
+body .our-services .our-services-part-1 .services-boxes .part-1-boxes .campaign-box h3,
+body .our-services .our-services-part-1 .services-boxes .part-1-boxes .social-media-box h3,
+body .our-services .our-services-part-1 .services-boxes .part-2-boxes .campaign-box h3,
+body .our-services .our-services-part-1 .services-boxes .part-2-boxes .social-media-box h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: -0.1rem;
+  font-family: "Montserrat", sans-serif;
+}
+body .our-services .our-services-part-1 .services-boxes .part-1-boxes .campaign-box .logo,
+body .our-services .our-services-part-1 .services-boxes .part-1-boxes .social-media-box .logo,
+body .our-services .our-services-part-1 .services-boxes .part-2-boxes .campaign-box .logo,
+body .our-services .our-services-part-1 .services-boxes .part-2-boxes .social-media-box .logo {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+  align-items: center;
+}
+body .our-services .our-services-part-1 .services-boxes .part-1-boxes .campaign-box .logo .logo-name,
+body .our-services .our-services-part-1 .services-boxes .part-1-boxes .social-media-box .logo .logo-name,
+body .our-services .our-services-part-1 .services-boxes .part-2-boxes .campaign-box .logo .logo-name,
+body .our-services .our-services-part-1 .services-boxes .part-2-boxes .social-media-box .logo .logo-name {
+  text-transform: uppercase;
+}
+body .our-services .our-services-part-2 {
+  width: 50%;
+}
+body .our-services .our-services-part-2 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+body .a-horizontal-row {
+  height: 1px;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.516);
+}
+body .selected-work {
+  padding: 5rem 4rem;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+body .selected-work .selected-work-heading-image {
+  width: 100%;
+  padding-bottom: 3.5rem;
+}
+body .selected-work .selected-work-heading-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+body .selected-work .azure {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+body .selected-work .azure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 32%;
+}
+body .selected-work .azure .azure-text {
+  width: 32%;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .selected-work .azure .azure-text .top-part h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.1rem;
+}
+body .selected-work .azure .azure-text .top-part p {
+  color: rgba(80, 80, 80, 0.827);
+  font-size: 1.1rem;
+  width: 100%;
+}
+body .selected-work .azure .azure-text .bottom-part {
+  color: rgba(80, 80, 80, 0.827);
+  font-size: 1.1rem;
+}
+body .selected-work .sage {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+body .selected-work .sage .sage-text {
+  width: 32%;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .selected-work .sage .sage-text .top-part h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.1rem;
+}
+body .selected-work .sage .sage-text .top-part p {
+  color: rgba(80, 80, 80, 0.827);
+  font-size: 1.1rem;
+  width: 100%;
+}
+body .selected-work .sage .sage-text .bottom-part {
+  color: rgba(80, 80, 80, 0.827);
+  font-size: 1.1rem;
+}
+body .selected-work .sage img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 32%;
+}
+body .selected-work .client {
+  width: 100%;
+  display: flex;
+  padding: 3rem 0;
+  justify-content: space-between;
+}
+body .selected-work .client .blank {
+  width: 32%;
+}
+body .selected-work .client .client-part {
+  width: 66%;
+}
+body .selected-work .client .client-part .image-part {
+  display: flex;
+  justify-content: end;
+}
+body .selected-work .client .client-part .image-part img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  justify-self: flex-end;
+}
+body .selected-work .client .client-part .client-text-part {
+  padding: 4.5rem 0;
+  width: 100%;
+}
+body .selected-work .client .client-part .client-text-part .ctp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(93, 93, 93, 0.707);
+}
+body .selected-work .client .client-part .client-text-part .ctp p {
+  width: 8%;
+  font-size: 1rem;
+}
+body .selected-work .client .client-part .client-text-part .ctp .brand {
+  width: 91%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .selected-work .client .client-part .client-text-part .ctp .brand h4 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+body .team-section {
+  padding: 4rem 4rem;
+  display: grid;
+  grid-template-areas: "team team team-text team-text" "photo-1 photo-2 photo-3 photo-4" ". . join join";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+body .team-section .team {
+  grid-area: team;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+body .team-section .team h2 {
+  font-size: 7.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -0.2rem;
+}
+body .team-section .team-text {
+  grid-area: team-text;
+  align-self: center;
+}
+body .team-section .team-text p {
+  font-size: 1.2rem;
+}
+body .team-section .team-section-photo-1,
+body .team-section .team-section-photo-2,
+body .team-section .team-section-photo-3,
+body .team-section .team-section-photo-4 {
+  grid-area: photo-1;
+  padding: 2rem 0;
+  display: grid;
+  gap: 1rem;
+}
+body .team-section .team-section-photo-1 h3,
+body .team-section .team-section-photo-2 h3,
+body .team-section .team-section-photo-3 h3,
+body .team-section .team-section-photo-4 h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 450;
+  letter-spacing: -0.01rem;
+}
+body .team-section .team-section-photo-1 img,
+body .team-section .team-section-photo-2 img,
+body .team-section .team-section-photo-3 img,
+body .team-section .team-section-photo-4 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+body .team-section .team-section-photo-1 .photo-1-subText,
+body .team-section .team-section-photo-1 .photo-2-subText,
+body .team-section .team-section-photo-1 .photo-3-subText,
+body .team-section .team-section-photo-1 .photo-4-subText,
+body .team-section .team-section-photo-2 .photo-1-subText,
+body .team-section .team-section-photo-2 .photo-2-subText,
+body .team-section .team-section-photo-2 .photo-3-subText,
+body .team-section .team-section-photo-2 .photo-4-subText,
+body .team-section .team-section-photo-3 .photo-1-subText,
+body .team-section .team-section-photo-3 .photo-2-subText,
+body .team-section .team-section-photo-3 .photo-3-subText,
+body .team-section .team-section-photo-3 .photo-4-subText,
+body .team-section .team-section-photo-4 .photo-1-subText,
+body .team-section .team-section-photo-4 .photo-2-subText,
+body .team-section .team-section-photo-4 .photo-3-subText,
+body .team-section .team-section-photo-4 .photo-4-subText {
+  text-transform: uppercase;
+}
+body .team-section .team-section-photo-1 .photo-1-subText p,
+body .team-section .team-section-photo-1 .photo-2-subText p,
+body .team-section .team-section-photo-1 .photo-3-subText p,
+body .team-section .team-section-photo-1 .photo-4-subText p,
+body .team-section .team-section-photo-2 .photo-1-subText p,
+body .team-section .team-section-photo-2 .photo-2-subText p,
+body .team-section .team-section-photo-2 .photo-3-subText p,
+body .team-section .team-section-photo-2 .photo-4-subText p,
+body .team-section .team-section-photo-3 .photo-1-subText p,
+body .team-section .team-section-photo-3 .photo-2-subText p,
+body .team-section .team-section-photo-3 .photo-3-subText p,
+body .team-section .team-section-photo-3 .photo-4-subText p,
+body .team-section .team-section-photo-4 .photo-1-subText p,
+body .team-section .team-section-photo-4 .photo-2-subText p,
+body .team-section .team-section-photo-4 .photo-3-subText p,
+body .team-section .team-section-photo-4 .photo-4-subText p {
+  letter-spacing: 0.05rem;
+}
+body .team-section .team-section-photo-1 .photo-1-description,
+body .team-section .team-section-photo-1 .photo-2-description,
+body .team-section .team-section-photo-1 .photo-3-description,
+body .team-section .team-section-photo-1 .photo-4-description,
+body .team-section .team-section-photo-2 .photo-1-description,
+body .team-section .team-section-photo-2 .photo-2-description,
+body .team-section .team-section-photo-2 .photo-3-description,
+body .team-section .team-section-photo-2 .photo-4-description,
+body .team-section .team-section-photo-3 .photo-1-description,
+body .team-section .team-section-photo-3 .photo-2-description,
+body .team-section .team-section-photo-3 .photo-3-description,
+body .team-section .team-section-photo-3 .photo-4-description,
+body .team-section .team-section-photo-4 .photo-1-description,
+body .team-section .team-section-photo-4 .photo-2-description,
+body .team-section .team-section-photo-4 .photo-3-description,
+body .team-section .team-section-photo-4 .photo-4-description {
+  font-size: 1.1rem;
+  color: rgba(128, 128, 128, 0.663);
+  text-align: justify;
+  line-height: 1.3;
+}
+body .team-section .team-section-photo-2 {
+  grid-area: photo-2;
+}
+body .team-section .team-section-photo-3 {
+  grid-area: photo-3;
+}
+body .team-section .team-section-photo-4 {
+  grid-area: photo-4;
+}
+body .team-section .join-the-team {
+  grid-area: join;
+  border-top: 1px solid rgba(128, 128, 128, 0.378);
+  padding: 1rem 0 6rem 0;
+  display: flex;
+  flex-direction: column;
+}
+body .team-section .join-the-team p {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 450;
+  line-height: 1;
+}
+body .team-section .join-the-team h3 {
+  margin-top: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 450;
+  line-height: 1;
+  letter-spacing: -0.1rem;
+}
+body .team-section .join-the-team .find-job {
+  margin-top: 3rem;
+}
+body .lets-create {
+  width: 100%;
+  background-color: black;
+  padding: 9rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .lets-create img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+body .lets-create .sub-text {
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 450;
+  line-height: 1.1;
+  margin-top: 2.8rem;
+}
+body .lets-create .btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2.8rem;
+}
+body .lets-create .btn .get-touch {
+  justify-self: center;
+  text-transform: uppercase;
+  padding: 1.2rem;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 3rem;
+}
+body .footer {
+  width: 100%;
+  background-color: black;
+  padding: 5.5rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+body .footer .logo-social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+}
+body .footer .logo-social-media .logo {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+body .footer .logo-social-media .social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body .footer .logo-social-media .social-media .instagram,
+body .footer .logo-social-media .social-media .twitter,
+body .footer .logo-social-media .social-media .behance {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+}
+body .footer .logo-social-media .social-media .instagram p,
+body .footer .logo-social-media .social-media .twitter p,
+body .footer .logo-social-media .social-media .behance p {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+body .footer .pages,
+body .footer .cms,
+body .footer .utility-pages {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 450;
+  gap: 1.5rem;
+}
+body .footer .pages h4,
+body .footer .cms h4,
+body .footer .utility-pages h4 {
+  font-size: 1.3rem;
+  font-weight: 450;
+  text-transform: uppercase;
+}
+body .footer .pages button,
+body .footer .cms button,
+body .footer .utility-pages button {
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  font-size: 0.7rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.8rem 1rem;
+  border-radius: 3rem;
+}
+body .footer .made-by {
+  padding-top: 3rem;
+}
+body .footer .made-by p {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  word-spacing: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+    height: 100%;
+    padding: 0rem 0rem;
+  }
+  body nav {
+    margin-bottom: 0.4rem;
+    padding: 0 1.35rem;
+  }
+  body nav .logo {
+    width: 50%;
+    font-size: 1.6rem;
+  }
+  body nav .nav-btn {
+    display: none;
+  }
+  body nav .menu-bar {
+    display: initial;
+  }
+  body .title {
+    padding: 0 1.35rem;
+  }
+  body .title .title-subtext {
+    margin-top: 0.3rem;
+  }
+  body .brand-potential {
+    padding: 0 1.35rem;
+    margin: 1.2rem 0 0 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  body .brand-potential .brand-potential-part-1 {
+    width: 100%;
+    padding: 1.5rem 0 0 0;
+  }
+  body .brand-potential .brand-potential-part-1 .brand-potential-motto {
+    font-size: 3.1rem;
+    line-height: 1.1;
+    letter-spacing: -0.15rem;
+    word-spacing: 1rem;
+  }
+  body .brand-potential .brand-potential-part-1 .brand-potential-motto-subtitle {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+  body .brand-potential .brand-potential-part-1 .box {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 150;
+    padding: 0.9rem 0;
+  }
+  body .brand-potential .brand-potential-part-1 .box h3 {
+    font-weight: 400;
+  }
+  body .brand-potential .brand-potential-part-1 .box p {
+    font-size: 1.5rem;
+  }
+  body .brand-potential .brand-potential-part-2 {
+    width: 100%;
+  }
+  body .brand-potential .brand-potential-part-2 img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+    height: 100%;
+    align-items: stretch;
+  }
+  body .solutions {
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem 1.35rem 0 1.35rem;
+    justify-content: space-between;
+  }
+  body .solutions .solution-part-1 {
+    width: 100%;
+  }
+  body .solutions .solution-part-1 img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 150%;
+  }
+  body .solutions .solution-part-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  body .solutions .solution-part-2 .solution-gen-text {
+    width: 88%;
+    padding: 1.2rem 0rem;
+  }
+  body .solutions .solution-part-2 .solution-gen-text h2 {
+    font-size: 3rem;
+    word-spacing: 0.6rem;
+    margin-bottom: 0.9rem;
+  }
+  body .solutions .solution-part-2 .solution-gen-text p {
+    color: rgba(114, 114, 114, 0.825);
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  body .solutions .solution-part-2 .solution-rotate-text p {
+    padding-top: 1.5rem;
+    writing-mode: vertical-rl;
+    font-size: 1rem;
+  }
+  body .our-services {
+    width: 100%;
+    padding: 0.8rem 1.35rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  body .our-services .our-services-part-1 {
+    padding: 1.5rem 0;
+    padding-bottom: 1.2rem;
+    width: 100%;
+  }
+  body .our-services .our-services-part-1 .services-title {
+    width: 100%;
+    font-size: 3.1rem;
+  }
+  body .our-services .our-services-part-1 .services-boxes {
+    width: 100%;
+    margin-top: 1.3rem;
+  }
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .branding-box,
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .ecommerce-box,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .branding-box,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .ecommerce-box {
+    width: 100%;
+    padding: 0rem 1.2rem 1.2rem 0;
+    border-top: 2px solid rgba(128, 128, 128, 0.359);
+  }
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .branding-box h3,
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .ecommerce-box h3,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .branding-box h3,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .ecommerce-box h3 {
+    font-size: 1.7rem;
+  }
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .branding-box p,
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .ecommerce-box p,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .branding-box p,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .ecommerce-box p {
+    font-size: 1.1rem;
+    color: rgba(114, 114, 114, 0.825);
+  }
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .branding-box .logo,
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .ecommerce-box .logo,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .branding-box .logo,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .ecommerce-box .logo {
+    gap: 0.6rem;
+  }
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .branding-box .logo .logo-name,
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .ecommerce-box .logo .logo-name,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .branding-box .logo .logo-name,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .ecommerce-box .logo .logo-name {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .campaign-box,
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .social-media-box,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .campaign-box,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .social-media-box {
+    width: 100%;
+    padding: 0rem 1.2rem 1.2rem 0;
+    border-top: 2px solid rgba(128, 128, 128, 0.359);
+  }
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .campaign-box h3,
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .social-media-box h3,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .campaign-box h3,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .social-media-box h3 {
+    font-size: 1.7rem;
+  }
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .campaign-box p,
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .social-media-box p,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .campaign-box p,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .social-media-box p {
+    font-size: 1.1rem;
+    color: rgba(114, 114, 114, 0.825);
+  }
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .campaign-box .logo,
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .social-media-box .logo,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .campaign-box .logo,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .social-media-box .logo {
+    gap: 0.6rem;
+  }
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .campaign-box .logo .logo-name,
+  body .our-services .our-services-part-1 .services-boxes .part-1-boxes .social-media-box .logo .logo-name,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .campaign-box .logo .logo-name,
+  body .our-services .our-services-part-1 .services-boxes .part-2-boxes .social-media-box .logo .logo-name {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  body .our-services .our-services-part-2 {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+  body .our-services .our-services-part-2 img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  body .a-horizontal-row {
+    height: 1px;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.516);
+  }
+  body .selected-work {
+    padding: 2rem 1.35rem;
+    padding-bottom: 2rem;
+    width: 100%;
+  }
+  body .selected-work .selected-work-heading-image {
+    width: 100%;
+    padding-bottom: 1.8rem;
+  }
+  body .selected-work .selected-work-heading-image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+  body .selected-work .azure {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+  }
+  body .selected-work .azure img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  body .selected-work .azure .hide-in-mob {
+    display: none;
+  }
+  body .selected-work .azure .azure-text {
+    width: 100%;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  body .selected-work .azure .azure-text .top-part h3 {
+    font-size: 2.4rem;
+    letter-spacing: 0rem;
+    margin-bottom: 0.4rem;
+  }
+  body .selected-work .azure .azure-text .top-part p {
+    color: rgba(80, 80, 80, 0.827);
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  body .selected-work .azure .azure-text .bottom-part {
+    color: rgba(80, 80, 80, 0.827);
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 0 1rem 0;
+  }
+  body .selected-work .sage {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  body .selected-work .sage .sage-text {
+    width: 100%;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  body .selected-work .sage .sage-text .top-part h3 {
+    font-size: 2.4rem;
+    letter-spacing: 0rem;
+    margin-bottom: 0.4rem;
+  }
+  body .selected-work .sage .sage-text .top-part p {
+    color: rgba(80, 80, 80, 0.827);
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  body .selected-work .sage .sage-text .bottom-part {
+    color: rgba(80, 80, 80, 0.827);
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 0 1rem 0;
+  }
+  body .selected-work .sage img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  body .selected-work .sage .hide-in-mob {
+    display: none;
+  }
+  body .selected-work .client {
+    width: 100%;
+    display: flex;
+    padding: 0.5rem 0;
+    justify-content: space-between;
+  }
+  body .selected-work .client .blank {
+    display: none;
+  }
+  body .selected-work .client .client-part {
+    width: 100%;
+  }
+  body .selected-work .client .client-part .image-part {
+    display: flex;
+    justify-content: center;
+  }
+  body .selected-work .client .client-part .image-part img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    justify-self: center;
+  }
+  body .selected-work .client .client-part .client-text-part {
+    padding: 2rem 0;
+    width: 100%;
+  }
+  body .selected-work .client .client-part .client-text-part .ctp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    padding: 1.7rem 0;
+    border-bottom: 1px solid rgba(93, 93, 93, 0.707);
+    gap: 0.2rem;
+  }
+  body .selected-work .client .client-part .client-text-part .ctp p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  body .selected-work .client .client-part .client-text-part .ctp .brand {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0.25rem;
+  }
+  body .selected-work .client .client-part .client-text-part .ctp .brand h4 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+  }
+  body .team-section {
+    padding: 2rem 1.35rem;
+    display: grid;
+    grid-template-areas: "team" "team-text" "photo-1" "photo-2" "photo-3" "photo-4" "join";
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+  body .team-section .team {
+    grid-area: team;
+  }
+  body .team-section .team h2 {
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: -0.2rem;
+  }
+  body .team-section .team-text p {
+    font-size: 1.1rem;
+    word-spacing: 0.6rem;
+    line-height: 1.5;
+  }
+  body .team-section .team-section-photo-1,
+  body .team-section .team-section-photo-2,
+  body .team-section .team-section-photo-3,
+  body .team-section .team-section-photo-4 {
+    grid-area: photo-1;
+    padding: 1rem 0 0.2rem 0;
+    display: grid;
+    gap: 0.8rem;
+  }
+  body .team-section .team-section-photo-1 h3,
+  body .team-section .team-section-photo-2 h3,
+  body .team-section .team-section-photo-3 h3,
+  body .team-section .team-section-photo-4 h3 {
+    text-transform: uppercase;
+  }
+  body .team-section .team-section-photo-1 img,
+  body .team-section .team-section-photo-2 img,
+  body .team-section .team-section-photo-3 img,
+  body .team-section .team-section-photo-4 img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  body .team-section .team-section-photo-1 .photo-1-subText,
+  body .team-section .team-section-photo-1 .photo-2-subText,
+  body .team-section .team-section-photo-1 .photo-3-subText,
+  body .team-section .team-section-photo-1 .photo-4-subText,
+  body .team-section .team-section-photo-2 .photo-1-subText,
+  body .team-section .team-section-photo-2 .photo-2-subText,
+  body .team-section .team-section-photo-2 .photo-3-subText,
+  body .team-section .team-section-photo-2 .photo-4-subText,
+  body .team-section .team-section-photo-3 .photo-1-subText,
+  body .team-section .team-section-photo-3 .photo-2-subText,
+  body .team-section .team-section-photo-3 .photo-3-subText,
+  body .team-section .team-section-photo-3 .photo-4-subText,
+  body .team-section .team-section-photo-4 .photo-1-subText,
+  body .team-section .team-section-photo-4 .photo-2-subText,
+  body .team-section .team-section-photo-4 .photo-3-subText,
+  body .team-section .team-section-photo-4 .photo-4-subText {
+    text-transform: uppercase;
+  }
+  body .team-section .team-section-photo-1 .photo-1-subText p,
+  body .team-section .team-section-photo-1 .photo-2-subText p,
+  body .team-section .team-section-photo-1 .photo-3-subText p,
+  body .team-section .team-section-photo-1 .photo-4-subText p,
+  body .team-section .team-section-photo-2 .photo-1-subText p,
+  body .team-section .team-section-photo-2 .photo-2-subText p,
+  body .team-section .team-section-photo-2 .photo-3-subText p,
+  body .team-section .team-section-photo-2 .photo-4-subText p,
+  body .team-section .team-section-photo-3 .photo-1-subText p,
+  body .team-section .team-section-photo-3 .photo-2-subText p,
+  body .team-section .team-section-photo-3 .photo-3-subText p,
+  body .team-section .team-section-photo-3 .photo-4-subText p,
+  body .team-section .team-section-photo-4 .photo-1-subText p,
+  body .team-section .team-section-photo-4 .photo-2-subText p,
+  body .team-section .team-section-photo-4 .photo-3-subText p,
+  body .team-section .team-section-photo-4 .photo-4-subText p {
+    letter-spacing: 0.05rem;
+  }
+  body .team-section .team-section-photo-1 .photo-1-description,
+  body .team-section .team-section-photo-1 .photo-2-description,
+  body .team-section .team-section-photo-1 .photo-3-description,
+  body .team-section .team-section-photo-1 .photo-4-description,
+  body .team-section .team-section-photo-2 .photo-1-description,
+  body .team-section .team-section-photo-2 .photo-2-description,
+  body .team-section .team-section-photo-2 .photo-3-description,
+  body .team-section .team-section-photo-2 .photo-4-description,
+  body .team-section .team-section-photo-3 .photo-1-description,
+  body .team-section .team-section-photo-3 .photo-2-description,
+  body .team-section .team-section-photo-3 .photo-3-description,
+  body .team-section .team-section-photo-3 .photo-4-description,
+  body .team-section .team-section-photo-4 .photo-1-description,
+  body .team-section .team-section-photo-4 .photo-2-description,
+  body .team-section .team-section-photo-4 .photo-3-description,
+  body .team-section .team-section-photo-4 .photo-4-description {
+    font-size: 1.1rem;
+    color: rgba(128, 128, 128, 0.663);
+    text-align: justify;
+    line-height: 1.3;
+  }
+  body .team-section .team-section-photo-2 {
+    grid-area: photo-2;
+  }
+  body .team-section .team-section-photo-3 {
+    grid-area: photo-3;
+  }
+  body .team-section .team-section-photo-4 {
+    grid-area: photo-4;
+    padding-bottom: 3rem;
+  }
+  body .team-section .join-the-team {
+    grid-area: join;
+    border-top: 1px solid rgba(128, 128, 128, 0.378);
+    padding: 1rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+  body .team-section .join-the-team p {
+    font-size: 0.8rem;
+    font-weight: 450;
+    line-height: 1;
+  }
+  body .team-section .join-the-team h3 {
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.1rem;
+  }
+  body .team-section .join-the-team .find-job {
+    margin-top: 2.5rem;
+  }
+  body .lets-create {
+    width: 100%;
+    background-color: black;
+    padding: 5rem 1.35rem 4.5rem 1.35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body .lets-create img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+  body .lets-create .sub-text {
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 450;
+    line-height: 1.1;
+    margin-top: 1.5rem;
+  }
+  body .lets-create .btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  body .lets-create .btn .get-touch {
+    justify-self: center;
+    text-transform: uppercase;
+    padding: 0.7rem 2rem;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 3rem;
+  }
+  body .footer {
+    width: 100%;
+    background-color: black;
+    padding: 2rem 1.35rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 2.5rem;
+  }
+  body .footer .logo-social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  body .footer .logo-social-media .logo {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+  }
+  body .footer .logo-social-media .social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    margin-top: 1.5rem;
+  }
+  body .footer .logo-social-media .social-media .instagram,
+  body .footer .logo-social-media .social-media .twitter,
+  body .footer .logo-social-media .social-media .behance {
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+  }
+  body .footer .logo-social-media .social-media .instagram p,
+  body .footer .logo-social-media .social-media .twitter p,
+  body .footer .logo-social-media .social-media .behance p {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  body .footer .pages,
+  body .footer .cms,
+  body .footer .utility-pages {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  body .footer .pages h4,
+  body .footer .cms h4,
+  body .footer .utility-pages h4 {
+    font-size: 1.3rem;
+    font-weight: 450;
+    text-transform: uppercase;
+  }
+  body .footer .pages button,
+  body .footer .cms button,
+  body .footer .utility-pages button {
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    font-size: 0.7rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0.8rem 1rem;
+    border-radius: 3rem;
+  }
+  body .footer .made-by {
+    padding-top: 1rem;
+  }
+  body .footer .made-by p {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    word-spacing: 0.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
